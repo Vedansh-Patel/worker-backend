@@ -1,0 +1,18 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Job {
+  id          Int      @id @default(autoincrement())
+  idea        String
+  platform    String   @default("web")
+  status      String   @default("pending")
+  artifactPath String?
+  createdAt   DateTime @default(now())
+}

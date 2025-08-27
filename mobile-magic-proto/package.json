@@ -1,0 +1,29 @@
+{
+  "name": "mobile-magic-proto",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "worker": "node worker/index.js",
+    "prisma:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^5.0.0",
+    "@prisma/client": "^5.0.0",
+    "bullmq": "^1.70.0",
+    "handlebars": "^4.7.7",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "redis": "^4.6.7",
+    "sqlite3": "^5.1.6",
+    "node-fetch": "^2.6.9",
+    "archiver": "^5.3.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.0.0"
+  }
+}
